@@ -1,0 +1,27 @@
+header{
+    display: flex;
+    flex-direction: row;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    justify-content:space-around;
+}
+
+@media all and (max-width : 480px){
+
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
