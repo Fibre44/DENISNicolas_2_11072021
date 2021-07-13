@@ -1,7 +1,29 @@
+@font-face {
+    font-family: Raleway;
+    src: url('./fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
+}
+
 header{
     display: flex;
     flex-direction: row;
 }
+article{
+    border: 5px solid;
+    
+}
+a{
+    color:#0065FC;
+    font-family: Raleway;
+}
+#conteneur_filtres{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #F2F2F2;
+}
+
 footer{
     display: flex;
     flex-direction: row;
@@ -14,14 +36,47 @@ footer{
     header{
         display: flex;
         flex-direction: column;
-    }
-    nav{
-        display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
+        justify-content:space-around;
+
     }
+ 
     footer{
         display: flex;
         flex-direction: column;
+        background-color: #F2F2F2;
+        justify-content: space-around;
     }
+    #populaire{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #conteneur_filtres{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:space-betwee;
+    }
+    .filtre{
+        margin:auto;
+    }
+    .filtre:nth-child(1){
+        background-color: blue;
+
+    }
+    .filtre:nth-child(2){
+        background-color: red;
+
+    }
+    .filtre:nth-child(3){
+        background-color: orange;
+
+    }
+    .filtre:nth-child(4){
+        background-color: gray;
+        
+    }
+    
 }

@@ -7,32 +7,34 @@
     </head>
     <body>        
         <header>
-            <img src="./src/logo/Reservia.svg" alt="Reservia">
             <nav>
-                <a href="" >S'inscire</a>
-                <a href="">Hébergements</a>
-                <a href="">Activités</a>
+                <img src="./src/logo/Reservia.svg" alt="Reservia">
+                <a href="">S'inscire</a>
+                <a href="#hebergement">Hébergements</a>
+                <a href="#activite">Activités</a>
             </nav>
         </header>
         <section>
             <aside id="intoduction"> 
-                <h6>Trouver votre hébergement pour des vacances de rêve</h6>
+                <h3>Trouver votre hébergement pour des vacances de rêve</h3>
                 <p>En plein centre ville ou pleine nature</p>
             </aside>
             <aside id="recherche">
                 <input type="text" name="" placeholder="Marseille,France" id="barre_recherche">
             </aside>
             <aside id="conteneur_filtres">
-                <p class="filtre_1">Economique</p>
-                <p class="filtre_2">Familial</p>
-                <p class="filtre_3">Romantique</p>
-                <p class="filtre_4">Animaux autorisées</p>
+                <strong class="filtre">Filtres</strong>
+                <p class="filtre">Economique</p>
+                <p class="filtre">Familial</p>
+                <p class="filtre">Romantique</p>
+                <p class="filtre">Animaux autorisées</p>
             </aside>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
         
         <main id="hotels">
             <section class="populaire">
+                <h2>les plus populaires</h2>
                 <article class="populaire_1">
                     <img src="./src/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" class="mobile">
                     <p class="nom_hotel">Hotel le soleil du matin</p>
@@ -49,7 +51,8 @@
                     <p class="prix">Nuit à partir de 71€</p>
                 </article>
             </section>
-            <section class="hebergement">
+            <section id="hebergement">
+                <h2>Hebergement à Marseille</h2>
                 <article class="hebergement_1">
                     <img src="./src/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" class="mobile">
                     <p class="nom_hotel">Auberge de la Cannebière</p>
@@ -82,7 +85,8 @@
                 </article>
                 <strong>Afficher plus</strong>              
             </section>
-            <section class="activite">
+            <section id="activite">
+                <h2>Activité à Marseille</h2>
                 <article class="activite_1">
                     <img src="./src/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
                     <strong>Vieux Port</strong>
@@ -114,7 +118,7 @@
             <aside class="pied_page_1">
                 <strong>A propos</strong>
                 <p>Fonctionnement du site</p>
-                <p>Condition générales</p>
+                <p>Condition générales de ventes</p>
                 <p>Données et confidentialité</p>
             </aside>
             <aside class="pied_page_2">
