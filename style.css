@@ -1,11 +1,15 @@
 @font-face {
     font-family: Raleway;
-    src: url('./fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
+    src: url('./src/fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
+}
+* {
+    font-family: Raleway;
 }
 
 header{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 article{
     border: 5px solid;
@@ -15,6 +19,7 @@ a{
     color:#0065FC;
     font-family: Raleway;
 }
+
 #conteneur_filtres{
     display: flex;
     flex-direction: row;
@@ -36,8 +41,8 @@ footer{
     header{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        justify-content:space-around;
+        justify-content:space-between;
+        align-items:space-between;
 
     }
  

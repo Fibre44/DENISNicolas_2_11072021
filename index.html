@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
@@ -7,21 +7,27 @@
     </head>
     <body>        
         <header>
-            <nav>
+            <div>
                 <img src="./src/logo/Reservia.svg" alt="Reservia">
                 <a href="">S'inscire</a>
+            </div>
+            <nav>
                 <a href="#hebergement">Hébergements</a>
                 <a href="#activite">Activités</a>
             </nav>
         </header>
         <section>
+
             <aside id="intoduction"> 
                 <h3>Trouver votre hébergement pour des vacances de rêve</h3>
                 <p>En plein centre ville ou pleine nature</p>
             </aside>
-            <aside id="recherche">
-                <input type="text" name="" placeholder="Marseille,France" id="barre_recherche">
-            </aside>
+
+            <form action="" method="GET">
+                <input type="search" name="" placeholder="Marseille,France" id="barre_recherche">
+                <button>Recherche</button>
+            </form> 
+
             <aside id="conteneur_filtres">
                 <strong class="filtre">Filtres</strong>
                 <p class="filtre">Economique</p>
@@ -30,9 +36,11 @@
                 <p class="filtre">Animaux autorisées</p>
             </aside>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
+
         </section>
         
         <main id="hotels">
+
             <section class="populaire">
                 <h2>les plus populaires</h2>
                 <article class="populaire_1">
@@ -45,7 +53,7 @@
                     <p class="nom_hotel">Au coeur de l'eau Chambres d'hôtes</p>
                     <p class="prix">Nuit à partir de 71€</p>
                 </article>
-                <artcile class="populaire_3">
+                <article class="populaire_3">
                     <img src="./src/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="" class="mobile">
                     <p class="nom_hotel">Hotel Tout bleu et Blanc</p>
                     <p class="prix">Nuit à partir de 71€</p>
@@ -117,19 +125,18 @@
         <footer id="pied_page">
             <aside class="pied_page_1">
                 <strong>A propos</strong>
-                <p>Fonctionnement du site</p>
-                <p>Condition générales de ventes</p>
-                <p>Données et confidentialité</p>
+                <p><a href="">Condition générales de ventes</a></p>
+                <p><a href="">Données et confidentialité</a></p>
             </aside>
             <aside class="pied_page_2">
                 <strong>Nos hébérgements</strong>
-                <p>Charte de la qualité</p>
-                <p>Soumettre votre hotel</p>
+                <p><a href="">Charte de la qualité</a></p>
+                <p><a href="">Soumettre votre hotel</a></p>
             </aside>
             <aside class="pied_page_3">
                 <strong>Assistance</strong>
-                <p>Centre d'aide</p>
-                <p> Nous contacter</p>
+                <p><a href="">Centre d'aide</a></p>
+                <p><a href="">Nous contacter</a></p>
             </aside>
         </footer>
     </body>
