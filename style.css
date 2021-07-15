@@ -7,11 +7,31 @@
     font-family: Raleway;
 }
 
-header{
+.logo{
+    max-width: 100%;
+    height: auto;
+}
+
+.container-header{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
 }
+.main-nav ul{
+    margin: 1em 0 .5em;
+    text-align: center;
+}
+.main-nav li{
+    display: inline;
+}
+.main-nav a{
+    display: inline;
+    padding:  .5em 1.5em;
+}
+
+
 article{
     border: 5px solid;
     
@@ -38,10 +58,8 @@ footer{
 
 @media all and (max-width : 800px){
 
-    header{
-        display: flex;
-        flex-direction: column;
-        justify-content:space-between;
+    .main-header .container-header{
+        justify-content: space-between;
     }
  
     footer{
