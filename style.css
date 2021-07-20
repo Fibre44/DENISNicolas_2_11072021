@@ -10,8 +10,8 @@
 /*Header */
 
 .logo{
-    max-width: 100%;
     height: auto;
+    width: auto;
     flex:2;
 }
 
@@ -22,22 +22,7 @@
     justify-content: flex-end;
     flex-wrap: wrap;
 }
-.main-nav ul{
-    margin: 1em 0 .5em;
-    text-align: center;
-}
-.main-nav li{
-    display: inline;
-}
-.main-nav a{
-    display: inline;
-    padding:  .5em 1.5em;
-}
 
-article{
-    border: 5px solid;
-    
-}
 a{
     color:#0065FC;
 }
@@ -55,10 +40,19 @@ a{
 
 /*Main */
 
+article{
+    border:solid 5px white;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
 #container-main{
     display: flex;
 }
 
+.container-populaire{
+    background-color: #F2F2F2;
+}
 footer{
     display: flex;
     flex-direction: row;
@@ -69,8 +63,30 @@ footer{
 @media all and (max-width : 480px){
 
     /*header */
-    .main-header .container-header{
+  
+    #container-header{
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    #container-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .lien:nth-child(1){
+        align-self: flex-end;
+    }
+
+    /*Search*/
+
+    #conteneur-search{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
     /*Filtres */
@@ -92,7 +108,20 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-content: center;
         flex-wrap: nowrap;
+    }
+    #container-populaire{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    img{
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        height: 300px;
+        width: auto;
     }
 
     /*footer*/
@@ -103,7 +132,5 @@ footer{
         background-color: #F2F2F2;
         justify-content: space-around;
     }
- 
- 
-    
+     
 }
