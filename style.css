@@ -7,6 +7,13 @@
     font-family: Raleway;
 }
 
+.fas fa-star{
+    color: blue;
+}
+.far fa-star{
+    color: white;
+}
+
 /*Header */
 
 .logo{
@@ -50,8 +57,9 @@ article{
     display: flex;
 }
 
-.container-populaire{
+.container-popular{
     background-color: #F2F2F2;
+    width: 400px;
 }
 footer{
     display: flex;
@@ -102,19 +110,26 @@ footer{
         order: 2;
     }
 
-    /*Main */
+    /* Main */
 
     #container-main{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-content: center;
-        flex-wrap: nowrap;
+        flex-wrap: no-wrap;
+        width: 480px;
+
     }
-    #container-populaire{
+    .container-popular{
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 480px;
+    }
+    .popular:nth-child(1){
+        width: 200px;
     }
 
     img{
