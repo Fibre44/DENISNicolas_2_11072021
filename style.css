@@ -9,25 +9,30 @@
 
 /*Header */
 
-.logo{
-    height: auto;
-    width: auto;
-    flex:2;
-}
-
-#container-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-}
-
 a{
     color:#0065FC;
 }
+/*search */
+
+#conteneur-search{
+    border-radius: 10px;
+    border: solid 1px #F2F2F2;
+}
+#conteneur-search i{
+    background-color: #F2F2F2;
+    border-top-left-radius:  10px;
+}
+
+button i{
+    background-color: #0065FC;
+    border-radius: 10px;
+    color: white;
+}
+
 
 /*Filtres */
+
+
 
 /* Gestion des icones des filtres */
 
@@ -78,25 +83,35 @@ footer{
     justify-content:space-around;
 }
 
-@media all and (max-width : 480px){
+footer a {
+    color: black;
+}
+
+@media all and (max-width : 600px){
 
     /*header */
   
     #container-header{
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: no-wrap;
+        width: 480px;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+    .lien{
+        align-self: flex-end;
     }
     #container-nav{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        flex-wrap: wrap;
     }
     .lien:nth-child(1){
-        align-self: flex-end;
+        align-self: flex-start;
     }
 
     /*Search*/
@@ -104,8 +119,10 @@ footer{
     #conteneur-search{
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
+        width: 480px;
     }
+   
 
     /*Filtres */
     #conteneur_filtres{
@@ -115,20 +132,33 @@ footer{
         flex-wrap: wrap;
         align-items:flex-start;
         height: 200px;
+        width: 480px;
+    }
+
+    .search{
+        flex:1;
     }
 
     /* Main */
+
+    img{
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        height: 300px;
+        width: auto;
+    }
 
     #container-main{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-content: center;
         flex-wrap: no-wrap;
         width: 480px;
 
     }
-    .container-all-popular{
+
+    /*Popular */
+    #container-all-popular{
         background-color: #F2F2F2;
         width: 480px;
     }
@@ -144,12 +174,18 @@ footer{
         width: 200px;
     }
 
-    img{
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-        height: 300px;
-        width: auto;
+    /*Herbergement*/
+    #container-all-hebergement{
+        width: 480px;
     }
+
+    #container-all-activite{
+        width: 480px;
+    }
+
+
+
+    /*activite*/
 
     /*footer*/
  
