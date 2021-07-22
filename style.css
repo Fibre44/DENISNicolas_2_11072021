@@ -65,11 +65,11 @@ article{
 
 #container-main{
     display: flex;
+    
 }
 
-.container-popular{
+.container-all-popular{
     background-color: #F2F2F2;
-    width: 400px;
 }
 footer{
     display: flex;
@@ -128,12 +128,17 @@ footer{
         width: 480px;
 
     }
+    .container-all-popular{
+        background-color: #F2F2F2;
+        width: 480px;
+    }
     .container-popular{
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        flex-direction: column;
+        justify-content: space-around;
         flex-wrap: wrap;
         width: 480px;
+        height: 200px;
     }
     .popular:nth-child(1){
         width: 200px;
