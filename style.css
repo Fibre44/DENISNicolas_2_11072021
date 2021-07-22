@@ -7,13 +7,6 @@
     font-family: Raleway;
 }
 
-.fas fa-star{
-    color: blue;
-}
-.far fa-star{
-    color: white;
-}
-
 /*Header */
 
 .logo{
@@ -36,6 +29,8 @@ a{
 
 /*Filtres */
 
+/* Gestion des icones des filtres */
+
 #conteneur_filtres{
     display: flex;
     flex-direction: row;
@@ -43,6 +38,21 @@ a{
     justify-content:space-between;
     align-items: center;
     background-color: #F2F2F2;
+}
+
+#conteneur_filtres i {
+    color:#0065FC;
+    border:solid 1px;
+    background-color:#DEEBFF;
+    border-radius: 10px;
+}
+
+.filtres{
+    border : solid 1px;
+    border-radius: 10px;
+}
+.filtres:nth-child(2){
+    align-self:flex-end;
 }
 
 /*Main */
@@ -105,9 +115,6 @@ footer{
         flex-wrap: wrap;
         align-items:flex-start;
         height: 200px;
-    }
-    .filtre:nth-child(2){
-        order: 2;
     }
 
     /* Main */
