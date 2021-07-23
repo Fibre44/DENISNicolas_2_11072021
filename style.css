@@ -12,6 +12,19 @@
 a{
     color:#0065FC;
 }
+
+#container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#container-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
 /*search */
 
 #conteneur-search{
@@ -32,6 +45,11 @@ button i{
 
 /*Filtres */
 
+#container_filtres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 
 /* Gestion des icones des filtres */
@@ -70,12 +88,65 @@ article{
 
 #container-main{
     display: flex;
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: 1300px;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;    
 }
 
-.container-all-popular{
+#container-all-popular{
+    order :2;
+    width: 300px;
     background-color: #F2F2F2;
+    
 }
+#container-all-hebergement{
+    order: 1;
+    width: 900px;
+    background-color: #F2F2F2;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+#container-all-activite{
+    order:3;
+    align-self: flex-end;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.title{
+    align-self: flex-start;
+}
+.container-hebergement{
+    display: flex;
+    flex-direction: column;
+    width: 300;
+
+}
+.container-popular{
+    display: flex;
+    flex-direction: column;
+}
+.container-activite{
+    display: flex;
+    flex-direction: row;
+}
+
+article img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+/*footer*/
 footer{
     display: flex;
     flex-direction: row;
@@ -125,7 +196,7 @@ footer a {
    
 
     /*Filtres */
-    #conteneur_filtres{
+    #container_filtres{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -177,10 +248,14 @@ footer a {
     /*Herbergement*/
     #container-all-hebergement{
         width: 480px;
+        display: flex;
+        flex-direction: column;
     }
 
     #container-all-activite{
         width: 480px;
+        display: flex;
+        flex-direction: column;
     }
 
 
