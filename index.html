@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <link href="./src/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
-        <!--Tuto utilisation fontawesome : https://www.codeur.com/tuto/html/inserer-icones-font-awesome/-->       
+        <!--Tuto utilisation fontawesome : https://www.codeur.com/tuto/html/inserer-icones-font-awesome /-->       
         <title>Reservia</title>
     </head>
 
@@ -21,24 +21,25 @@
       
         <!--Information+barre de recherche+filtre-->       
 
-        <section>
-            <h3>Trouver votre hébergement pour des vacances de rêve</h3>
+        <section id="container-all-search">
+            <h2>Trouver votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou pleine nature</p>
             
-            <form action="./form.php" method="GET" id="conteneur-search">
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="search" name="search_city" placeholder="Marseille,France" id="search">
-                <button><i class="fas fa-search"></i></button>
+            <form action="./form.php" method="GET" id="containeur-search">
+                <div class="search"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="search"><input type="search" name="search_city" placeholder="Marseille,France" ></div>
+                <button class="search"><i class="fas fa-search" style="color:white; background-color: #0065FC;"></i></button>
+                <button class="search">Rechercher</button>
             </form> 
 
             <aside id="container_filtres">
                 <strong>Filtres</strong>
-                <div class="filtres"><i class="fas fa-money-bill-wave-alt"></i>Economique</div>
-                <div class="filtres"><i class="fas fa-child"></i>Familial</div>
-                <div class=filtres><i class="fas fa-heart" ></i>Romantique</div>
-                <div class=filtres><i class="fas fa-dog"></i>Animaux autorisées</div>
+                <div class="filtres"><i class="fas fa-money-bill-wave-alt"></i> <span class="label">Economique</span></div>
+                <div class="filtres"><i class="fas fa-child"></i> <span class="label">Familial</span></div>
+                <div class=filtres><i class="fas fa-heart" ></i> <span class="label">Romantique</span></div>
+                <div class=filtres><i class="fas fa-dog"></i> <span class="label">Animaux autorisées</span></div>
             </aside>
-            <p><i class="fas fa-info-circle">Plus de 500 logements sont disponibles dans cette ville</i><p>
+            <div class="information"><i class="fas fa-info-circle"><span class="label">Plus de 500 logements sont disponibles dans cette ville</span></i></div>
 
 
         </section>
