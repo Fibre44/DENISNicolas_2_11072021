@@ -279,7 +279,7 @@ h2{
         color: black;
     }
 
-@media all and (max-width : 800px){
+@media all and (max-width : 768px){
 
     /*header */
   
@@ -293,16 +293,14 @@ h2{
             width: 100px;
             height: 100px;
         }
-        .lien{
+        .register{
             align-self: flex-end;
+            font-weight: bold;
         }
         #container-nav{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-        }
-        .lien:nth-child(1){
-            align-self: flex-start;
         }
 
     /*Search*/
@@ -357,6 +355,7 @@ h2{
             justify-content: space-around;
             flex-wrap: no-wrap;
             width: auto;
+            height: auto;
 
         }
 
@@ -386,7 +385,7 @@ h2{
 
     /*Herbergement*/
         #container-all-hebergement{
-            width: 600px;
+            width: auto;
             height: auto;
             display: flex;
             flex-direction: column;
@@ -394,9 +393,16 @@ h2{
             flex-wrap: wrap;
 
         }
+        #hebergements{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
         .container-hebergement{
             display: flex;
             flex-direction: column;
+            justify-content: flex-start;
         }
         .herbergement img{
             width: auto;
