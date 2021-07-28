@@ -280,8 +280,16 @@ h2{
         color: black;
     }
 
+    /*Mobile L*/
+
 @media all and (max-width : 425px){
 
+    #container-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 425px;
+    }
     /*header */
   
         #container-header{
@@ -291,7 +299,6 @@ h2{
             align-content: center;
             align-items: center;
             flex-wrap: wrap;
-            width: 425px
         }
         .logo{
             width: 100px;
@@ -315,7 +322,6 @@ h2{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 425px;
         }
 
         #containeur-form{
@@ -323,7 +329,6 @@ h2{
             flex-direction: row;
             justify-content: flex-start;
             align-content: center;
-            width: 425px;
             border: solid #F2F2F2 1px;
         }
         input{
@@ -347,7 +352,6 @@ h2{
             justify-content: flex-start;
             align-items: flex-start;
             flex-wrap: wrap;
-            width: 425px;
         }
      
         #container-filtres-icons{
@@ -357,10 +361,7 @@ h2{
             align-items: flex-start;
             align-content: flex-start;
             flex-wrap: wrap;
-            width: 250px;
         }
-
-
 
     /* Main */
 
@@ -400,7 +401,7 @@ h2{
         #container-popular-title{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-start;
         }
         .container-popular{
             display: flex;
@@ -467,7 +468,6 @@ h2{
 
     /*Activité*/
         #container-all-activite{
-            width: 600px;
             height: auto;
             display: flex;
             flex-direction: column;
@@ -496,10 +496,32 @@ h2{
  
         footer{
             display: flex;
-            width: 425px;
             flex-direction: column;
             background-color: #F2F2F2;
             justify-content: center;
         }
         
 }
+
+    /*Mobile M*/
+
+    @media all and (max-width : 375px){
+
+        #container-body{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 375px;
+        }
+
+        /*Mobile M*/
+
+    @media all and (max-width : 320px){
+
+        #container-body{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 320px;
+        }
+    
