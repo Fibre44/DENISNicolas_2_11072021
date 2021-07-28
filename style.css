@@ -394,8 +394,14 @@ h2{
             justify-content: center;
             align-items: center;
             order :1;
+            border-radius: 0px;
     
-        }   
+        }
+        #container-popular-title{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
         .container-popular{
             display: flex;
             flex-direction: column;
