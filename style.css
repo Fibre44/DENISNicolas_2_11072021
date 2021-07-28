@@ -99,15 +99,14 @@ h2{
     #container-filtres{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: no-wrap;
         justify-content:space-between;
-        align-items: center;
-        width: 800px;
     }
 
     .filtres{
         border : solid 1px #DEEBFF;
         border-radius: 10px;
+        width: auto;
  
     }
     .filtres i{
@@ -120,6 +119,16 @@ h2{
         width: 20px;
         height: 20px;
 
+    }
+
+    .label{
+        font-weight: bold;
+    }
+
+    #container-filtres-icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
     }
 
     /*Information*/
@@ -155,10 +164,10 @@ h2{
 
     #container-all-popular{
         order :2;
-        width: 400px;
+        width: auto;
         background-color: #F2F2F2;
         border-radius: 10px;
-        height: auto;        
+        height: 800px;        
     }
 
     .container-popular{
@@ -193,7 +202,7 @@ h2{
         flex-wrap: wrap;
         justify-content: space-between;
         border-radius: 10px;
-        height: auto;
+        height: 800px;
 
     }
  
@@ -249,13 +258,13 @@ h2{
     }
 
     .container-activite-big img{
-        width: 300px;
+        width: 350px;
         height: 500px;
         
     } 
     .container-activite-small img{
-        width: 300px;
-        height: 500px;
+        width: 350px;
+        height: 250px;
         
     } 
 
@@ -282,7 +291,7 @@ h2{
             align-content: center;
             align-items: center;
             flex-wrap: wrap;
-            max-width: 400px
+            width: 425px
         }
         .logo{
             width: 100px;
@@ -306,6 +315,7 @@ h2{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            width: 425px;
         }
 
         #containeur-form{
@@ -313,11 +323,11 @@ h2{
             flex-direction: row;
             justify-content: flex-start;
             align-content: center;
-            width: 600px;
+            width: 425px;
             border: solid #F2F2F2 1px;
         }
         input{
-            width: 480px;
+            width: 300px;
         }
         input::placeholder {
             font-weight: bold;
@@ -337,9 +347,21 @@ h2{
             justify-content: flex-start;
             align-items: flex-start;
             flex-wrap: wrap;
-            max-width: 600px;
+            width: 425px;
         }
      
+        #container-filtres-icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            width: 250px;
+        }
+
+
+
     /* Main */
 
         h6{
@@ -365,22 +387,23 @@ h2{
     /*Popular */
         #container-all-popular{
             background-color: #F2F2F2;
-            width: 600px;
+            width: 425px;
             height: auto;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
             order :1;
     
         }   
         .container-popular{
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-content: flex-start;
             background-color: white;
             flex-wrap: wrap;
-            width: auto;
+            width: 400px;
             height: 200px;
         }
 
@@ -392,7 +415,7 @@ h2{
         }
 
         #container-popular-title i{
-            margin-left: 100px;
+            margin-left: 180px;
         }
 
 
@@ -402,10 +425,11 @@ h2{
 
     /*Herbergement*/
         #container-all-hebergement{
-            width: 600px;
+            width: 425px;
             height: auto;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             background-color: white;
             flex-wrap: wrap;
 
@@ -422,15 +446,17 @@ h2{
             justify-content: flex-start;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
-            border : solid 1px #F2F2F2
+            border : solid 1px #F2F2F2;
+            margin: 5px;
+
 
         }
         .herbergement img{
             height: 300px;
-            width: 600px;
+            width: 400px;
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
-
+            margin: 5px;
         }
 
     /*Activité*/
@@ -439,6 +465,7 @@ h2{
             height: auto;
             display: flex;
             flex-direction: column;
+            justify-content: center;
 
         }
         .container-activite-small, .container-activite-big{
@@ -449,12 +476,12 @@ h2{
             border-bottom-left-radius: 30px;
             border-bottom-right-radius: 30px;   
             border : solid 1px #F2F2F2
-        
+                    
         }
         
         #container-all-activite img{
             height: 400px;
-            width: 600px;
+            width: 400px;
             border-top-left-radius: 30px;
             border-top-right-radius: 30px; 
         }
@@ -463,11 +490,10 @@ h2{
  
         footer{
             display: flex;
-            width: 600px;
+            width: 425px;
             flex-direction: column;
             background-color: #F2F2F2;
-            justify-content: space-around;
-            align-items: flex-start;
+            justify-content: center;
         }
         
 }
