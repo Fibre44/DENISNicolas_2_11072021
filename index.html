@@ -14,11 +14,11 @@
         <!--En tete de la page-->       
             <header id="container-header">
                 <img src="./src/logo/Reservia.svg" alt="Reservia" class="logo">
-                <div class="register"><a href="">S'inscire</a></div>
                 <nav id="container-nav">
                     <div class="lien"><a href="#container-all-hebergement">Hébergements</a></div>
                     <div class="lien"><a href="#container-all-activite">Activités</a></div>
                 </nav> 
+                <div class="register"><a href="">S'inscire</a></div>
             </header>
         
             <!--Information+barre de recherche+filtre-->       
@@ -26,18 +26,17 @@
             <section id="container-all-search">
                 <h2>Trouver votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre ville ou pleine nature</p>            
-                <form action="./form.php" method="GET" id="containeur-search">
+                <form action="./form.php" method="GET" id="containeur-form">
                     <div class="search"><i class="fas fa-map-marker-alt"></i></div>
                     <div class="search"><input type="search" name="search_city" placeholder="Marseille,France" ></div>
                     <button class="search"><i class="fas fa-search" style="color:white; background-color: #0065FC;"></i></button>
                     <button class="search">Rechercher</button>
                 </form>
             </section>
-    
 
             <aside id="container-filtres">
-                <strong>Filtres</strong>
-                <div class="filtres"><i class="fas fa-money-bill-wave-alt"></i> <span class="label">Economique</span></div>
+                <strong class="filtres">Filtres</strong>
+                <div class="filtres"><i class="fas fa-money-bill-wave-alt"></i><span class="label">Economique</span></div>
                 <div class="filtres"><i class="fas fa-child"></i> <span class="label">Familial</span></div>
                 <div class=filtres><i class="fas fa-heart" ></i> <span class="label">Romantique</span></div>
                 <div class=filtres><i class="fas fa-dog"></i> <span class="label">Animaux autorisées</span></div>
@@ -53,13 +52,11 @@
             <main id="container-main">
 
                 <section id="container-all-popular">
-                    <div id="container-popular-title">
-                        <h2>Les plus populaires<i class="fas fa-chart-line"></i></h2>
-                    </div>
+                    <h2 id=container-popular-title>Les plus populaires<i class="fas fa-chart-line"></i></h2>
                     <article class="container-popular">
                         <img src="./src/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" class="popular">
                         <div class="popular"><h6>Hotel le soleil du matin</h6></div>
-                        <div class="popular"><p> Nuit à partir de 120€</p></div>
+                        <div class="popular"><p> Nuit à partir de 128€</p></div>
                         <aside class="container-star">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
