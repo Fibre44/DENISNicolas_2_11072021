@@ -1,13 +1,23 @@
 /*Paramétrage global */
+
+/*Police tuto https://ensweb.users.info.unicaen.fr/TW1/pres/fonts/ */
 @font-face {
     font-family: Raleway;
     src: url('./src/fonts/Raleway/static/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;   
+}
+@font-face {
+    font-family: Raleway-Bold;
+    src: url('./src/fonts/Raleway/static/Raleway-Bold.ttf') format('truetype');
+    font-weight: bold;
 }
 * {
     font-family: Raleway;
 }
-h2{
-    font-weight: bold;
+
+h2,h6,strong{
+    font-family: Raleway-Bold;
 }
 
 #container-body{
@@ -54,18 +64,11 @@ h2{
         background-color: #F2F2F2;
         border-top-left-radius:  10px;
     }
-    input{
-        color: 0065FC;
-        font-style: bold;
-
-    }
-
     /*localisation*/
 
     .search:nth-child(1){
         background-color: #F2F2F2;
         border : solid 1px;
-
     }
 
 /*Form*/
@@ -80,8 +83,8 @@ h2{
         flex-direction: row;
         width: 250px;
     }
-    input::placeholder{
-        font-weight: bold;
+    .searchInput::placeholder{
+        font-family: Raleway-Bold;
     }
 
     /*search*/
@@ -322,6 +325,7 @@ h2{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            margin-bottom: 10px;
         }
 
         #containeur-form{
@@ -352,23 +356,36 @@ h2{
             justify-content: flex-start;
             align-items: flex-start;
             flex-wrap: wrap;
+            margin-bottom: 10px;
         }
+        /*A revoir*/
      
         #container-filtres-icons{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            align-items: flex-start;
-            align-content: flex-start;
+            align-content: space-between;
             flex-wrap: wrap;
+            height: auto;
+
         }
 
+        .filtres:nth-child(2){
+            margin-right: 120px;
+        }
+        .filtres:nth-child(3){
+            margin-right: 200px;
+        }
+        .filtres{
+            margin-bottom: 10px;
+        }
+
+    /*Information*/
+
+    .information{
+        margin-bottom: 20px;
+    }
     /* Main */
-
-        h6{
-            font-weight: bold;
-            font-size: 1em;
-        }
 
         img{
             height: 300px;
@@ -419,6 +436,8 @@ h2{
             border-top-left-radius: 30px;
             margin-top: 5px;
             margin-bottom: 5px;
+            margin-left: 5px;
+            object-fit: cover;
         }
 
         #container-popular-title i{
@@ -453,17 +472,17 @@ h2{
             justify-content: flex-start;
             border-bottom-left-radius: 50px;
             border-bottom-right-radius: 50px;
-            border : solid 1px #F2F2F2;
             margin: 5px;
-
-
+            border: solid 1px #F2F2F2;
         }
+
         .herbergement img{
-            height: 300px;
+            height: 150px;
             width: 400px;
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
             margin: 5px;
+            object-fit: cover;
         }
 
     /*Activité*/
@@ -472,11 +491,13 @@ h2{
             display: flex;
             flex-direction: column;
             justify-content: center;
-
+            align-items: center;
         }
         .container-activite-small, .container-activite-big{
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
             border-top-left-radius: 30px;
             border-top-right-radius: 30px; 
             border-bottom-left-radius: 30px;
@@ -486,10 +507,11 @@ h2{
         }
         
         #container-all-activite img{
-            height: 400px;
+            height: 200px;
             width: 400px;
             border-top-left-radius: 30px;
-            border-top-right-radius: 30px; 
+            border-top-right-radius: 30px;
+            object-fit: cover;
         }
 
     /*footer*/
@@ -498,10 +520,11 @@ h2{
             display: flex;
             flex-direction: column;
             background-color: #F2F2F2;
-            justify-content: center;
+            justify-content: flex-start;
+            align-items: space-between;
         }
         
-}
+    }
 
     /*Mobile M*/
 
@@ -513,7 +536,7 @@ h2{
             justify-content: space-between;
             width: 375px;
         }
-
+    }
         /*Mobile M*/
 
     @media all and (max-width : 320px){
@@ -523,5 +546,5 @@ h2{
             flex-direction: column;
             justify-content: space-between;
             width: 320px;
-        }
-    
+        }  
+    }
