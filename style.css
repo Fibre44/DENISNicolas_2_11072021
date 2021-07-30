@@ -21,9 +21,6 @@
 }
 
 
-/*Laptop L */
-@media all and (max-width : 1440px){
-
 #container-body{
     display: flex;
     flex-direction: column;
@@ -191,15 +188,10 @@
         background-color: white;
     }
 
-    #container-popular-title i{
-        margin-left: 200px;
-    }
     .container-popular img{
         width: 50%;
         height: 200px;
         object-fit: cover;
-        border-bottom-left-radius: 30px;
-        border-top-left-radius: 30px;
 
     }
 
@@ -208,7 +200,6 @@
     #container-all-hebergement{
         order: 1;
         background-color: #F2F2F2;
-        margin-right: 10px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -281,8 +272,7 @@
         object-fit: cover;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px; 
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;  
+
         
     } 
     .container-activite-small img{
@@ -291,8 +281,7 @@
         object-fit: cover;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px; 
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;          
+         
     } 
 
 /*footer*/
@@ -308,6 +297,17 @@
 
     footer a {
         color: black;
+    }
+
+
+@media all and (max-width : 1024px){
+
+    #container-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 1024px;
+    
     }
 }
     /*Tablet*/
@@ -426,8 +426,8 @@
         #container-main{
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            justify-content: flex-start;
+            align-items: flex-start;
             flex-wrap: no-wrap;
             width: 100%;
         }
@@ -439,8 +439,8 @@
             height: auto;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
+            justify-content: center;
+            align-items: center;
             order :1;
             border-radius: 0px;
    
@@ -448,8 +448,9 @@
         #container-popular-title{
             display: flex;
             flex-direction: row;
-            justify-content: flex-start;
+            align-self: flex-start;
         }
+      
         .container-popular{
             display: flex;
             flex-direction: column;
@@ -459,30 +460,23 @@
             flex-wrap: wrap;
             width: 90%;
             height: 200px;
+            
         }
 
-        .container-popular-infos{
-            margin-left: 10px;
-        }
-
-        .container-popular img {
-            margin-top: 5px;
-            margin-bottom: 5px;
-            margin-left: 5px;
-            object-fit: cover;
-        }
-
-        #container-popular-title i{
-            margin-left: 180px;
-        }
-
-        .container-popular img{
-            width: 50%;
+         .container-popular img{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 5px;
+            width: 55%;
             height: 200px;
             object-fit: cover;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
     
         }
-
+        .container-popular-infos{
+            word-wrap: break-word;
+        }
 
     /*Herbergement*/
         #container-all-hebergement{
@@ -490,8 +484,8 @@
             height: auto;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
+            justify-content: center;
+            align-items: center;
             background-color: white;
             flex-wrap: wrap;
 
@@ -500,25 +494,27 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            align-items: flex-start;
+            align-items: center;
         }
         .container-hebergement{
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            border-bottom-left-radius: 50px;
-            border-bottom-right-radius: 50px;
-            margin: 5px;
+            align-items: flex-start;
             border: solid 1px #F2F2F2;
-            width: 80%;
+            width: 90%;
 
+        }
+        .container-herbergement-title{
+            align-self: flex-start;
         }
 
         .container-herbergements-infos{
             margin-left: 10%;
             display: flex;
             flex-direction: column;
-            flex-direction: space-around;
+            justify-content: flex-start;
+            align-items: flex-start;
         }
 
         .herbergement img{
@@ -526,7 +522,6 @@
             width: 100%;
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
-            margin: 5px;
             object-fit: cover;
         }
 
@@ -535,27 +530,42 @@
             height: auto;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
+            justify-content: center;
+            align-items: center;
             margin-left: 0px;
             margin-right: 0px;
+
+        }
+        #activites{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container-activite-title{
+            align-self: flex-start;
         }
         .container-activite-small, .container-activite-big{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            width: 90%;          
+             
+                      
+        }
+        .container-activite-small article{
             border : solid 1px #F2F2F2;
-            width: 80%;
-            
-                    
+
         }
         
         #container-all-activite img{
-            height: 200px;
+            height: 150px;
             width: 100%;
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
+
         }
 
         .activite-info{
@@ -568,6 +578,7 @@
         footer{
             display: flex;
             flex-direction: column;
+            justify-content: center;
             background-color: #F2F2F2;
             justify-content: flex-start;
             align-items: space-between;
