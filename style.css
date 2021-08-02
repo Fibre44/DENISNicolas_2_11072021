@@ -188,20 +188,22 @@
     .container-popular-infos{
         background-color: white;
         height: 100%;
-        
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+
     }
 
     .container-popular{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
         flex-wrap: wrap;
         width: 90%;
         height: 200px;
         border-radius: 30px;
         border : solid 5px white;
         background-color: white;
+        margin-bottom: 10px;
     }
     #container-popular-title{
         align-self: flex-start;
@@ -216,8 +218,8 @@
         width: 50%;
         height: 200px;
         object-fit: cover;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
 
 
     }
@@ -463,12 +465,8 @@
             background-color: #F2F2F2;
             width: 100%;
             height: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
             order :1;
-            border-radius: 0px;
+            border-radius:0px
    
         }
         #container-popular-title{
@@ -479,24 +477,9 @@
         }
       
         .container-popular{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            flex-wrap: wrap;
             width: 90%;
             height: 200px;
-            margin-bottom: 10px;
-            
-        }
-
-         .container-popular img{
-            width: 55%;
-            height: 200px;
-            object-fit: cover;
-            border-top-left-radius: 30px;
-            border-bottom-left-radius: 30px;
-    
+          
         }
         .container-popular-infos{
             word-wrap: break-word;
