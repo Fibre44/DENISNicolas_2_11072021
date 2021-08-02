@@ -201,15 +201,16 @@
         width: 30%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: center;
+        height: 650px;
         
     }
     .container-popular-infos{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         background-color: white;
         height: 100%;
         width: 50%;
@@ -219,18 +220,19 @@
     .popular-info h6{
         overflow-wrap: anywhere;
     }
-
-
+    
     .container-popular{
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
+        align-content: center;
         flex-wrap: wrap;
         width: 90%;
-        height: 200px;
+        height: 150px;
         border-radius: 30px;
         border : solid 5px white;
         background-color: white;
+        margin-bottom: 10px;
 
     }
     #container-popular-title{
@@ -243,7 +245,7 @@
 
     .container-popular img{
         width: 50%;
-        height: 200px;
+        height: 150px;
         object-fit: cover;
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
@@ -261,7 +263,7 @@
         border-radius: 10px;
         width: 60%;
         border-radius: 30px;
-        height: 50%;
+        height: 650px;
     }
  
     #hebergements{
