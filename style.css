@@ -258,8 +258,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-content: flex-start;
         border-radius: 10px;
-        height: 800px;
         width: 60%;
         border-radius: 30px;
     }
@@ -479,8 +479,10 @@
     /*Popular */
         #container-all-popular{
             width: 100%;
+            height: auto;
             order :1;
-            border-radius:0px;   
+            border-radius:0px;
+   
         }
         #container-popular-title{
             display: flex;
