@@ -565,7 +565,12 @@
         }
         .container-activite-small article{
             border : solid 1px #F2F2F2;
-
+        }
+        .container-activite-small-all{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         
         #container-all-activite img{
