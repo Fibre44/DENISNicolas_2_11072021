@@ -22,14 +22,17 @@
                 </nav> 
                 <div class="register"><a href="">S'inscire</a></div>
             </header>
-        
             <!--Information+barre de recherche+filtre-->       
-            <h2>Trouver votre hébergement pour des vacances de rêve</h2>
-            <p>En plein centre ville ou pleine nature</p>
+            <aside id="container-title">
+                <h2>Trouver votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre ville ou pleine nature</p>
+            </aside>
+            
+            
             <div id="container-search">
                 <form action="./form.php" method="GET" id="containeur-form">
                         <div class="search"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="searchInput"><input type="search" name="search_city" placeholder="Marseille,France" ></div>
+                        <div class="search"><input type="search" name="search_city" placeholder="Marseille,France" ></div>
                         <button class="search"><i class="fas fa-search" style="color:white; background-color: #0065FC;"></i></button>
                         <button class="search">Rechercher</button>
                 </form>
@@ -44,22 +47,24 @@
                     <div class="filtres"><i class="fas fa-dog"></i> <span class="label">Animaux autorisées</span></div>
                 </div>
             </aside>
-
             
             <div class="information">
                 <i class="fas fa-info-circle"></i>
                 <span class="information-label">Plus de 500 logements sont disponibles dans cette ville</span>
             </div>
-            
+
             <!--Liste des hotels-->       
 
             <main id="container-main">
 
                 <section id="container-all-popular">
-                    <div id="container-popular-title">
-                        <h2 class="popular-title">Les plus populaires</h2>
-                        <div class="popular-title"><i class="fas fa-chart-line"></i></div>
-                    </div>                 
+                    <h2 id="container-popular-title">
+                        Les plus populaires
+                        <div class="popular-title">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </h2>
+                                     
                     <article class="container-popular">
                         <img src="./src/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" class="popular">
                         <div class="container-popular-infos">
