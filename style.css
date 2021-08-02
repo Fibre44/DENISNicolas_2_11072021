@@ -252,7 +252,7 @@
         height: auto;
         background-color: white;
         border: solid 5px white;
-        border-radius: 20px;
+        border-radius: 30px;
 
     }
     .herbergement img{
@@ -511,6 +511,7 @@
             width: 90%;
             margin-bottom: 10px;
             border-radius: 30px;
+            box-shadow: 1px 1px 1px 1px grey;
 
         }
         .container-herbergement-title{
