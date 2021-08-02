@@ -195,7 +195,6 @@
 
     #container-all-popular{
         order :2;
-        width: auto;
         background-color: #F2F2F2;
         border-radius: 30px;
         width: 30%;
@@ -259,7 +258,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-content: flex-start;
+        align-content: center;
         border-radius: 10px;
         width: 60%;
         border-radius: 30px;
@@ -277,7 +276,6 @@
         display: flex;
         flex-direction: column;
         width: 30%;
-        height: auto;
         background-color: white;
         border: solid 5px white;
         border-radius: 30px;
