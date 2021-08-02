@@ -510,13 +510,14 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
+            width: 90%;
         }
         .container-hebergement{
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            width: 90%;
+            width: 100%;
             margin-bottom: 10px;
             border-radius: 30px;
             box-shadow: 1px 1px 1px 1px grey;
@@ -560,6 +561,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            width: 100%;
+
         }
 
         #container-activite-title{
