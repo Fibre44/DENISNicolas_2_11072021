@@ -516,7 +516,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            align-items: flex-start;
+            flex-wrap: wrap;
             width: 100%;
             margin-bottom: 10px;
             border-radius: 30px;
@@ -539,10 +539,10 @@
 
         .herbergement img{
             height: 150px;
-            width: 100%;
             border-top-left-radius: 30px;
             border-top-right-radius: 30px;
             object-fit: cover;
+            width: 100%;
         }
 
     /*Activité*/
