@@ -245,7 +245,7 @@
 
     .container-popular img{
         width: 50%;
-        height: 150px;
+        height: 100%;
         object-fit: cover;
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
