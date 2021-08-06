@@ -27,7 +27,7 @@ h6{
 
 #container-body{
 
-    width: 1440px;
+    width: auto;
 
 }
 /*icones*/
@@ -246,7 +246,7 @@ h6{
         height: auto;
         width: 100%;
         justify-content: space-around;
-        align-content: space-around;
+        align-content: center;
     }
 
     /* Popular*/
@@ -318,11 +318,15 @@ h6{
         display: flex;
         flex-direction: column;
         flex-wrap: no-wrap;
-        justify-content: center;
-        align-content: center;
+        justify-content: space-around;
+        align-items: flex-start;
         width: 65%;
         border-radius: 30px;
         height: 800px;
+    }
+
+    .container-herbergement-title{
+        margin-left: 5%;
     }
 
  
@@ -369,6 +373,8 @@ h6{
         order:3;
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
         width: 100%;
     }
     #container-activite-title{
@@ -440,10 +446,11 @@ h6{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-content: space-around;
+        align-content: space-between;
         flex-wrap: wrap;
-        width: 50%;
+        width: 75%;
         height: 150px;
+        margin-left: 1%;
     }
 
     footer a {
@@ -675,9 +682,7 @@ h6{
             height: 100%;
             margin-left: 5%;
 
-        }
-
-        
+        }        
     }
 
     /*Mobile M*/
