@@ -345,7 +345,7 @@ h6{
         flex-direction: column;
         width: 25%;
         background-color: white;
-        border: solid 5px white;
+        border: solid 5px #F2F2F2;
         border-radius: 30px;
     }
     .container-herbergements-infos{
@@ -396,6 +396,9 @@ h6{
         flex-wrap: nowrap;
         width: 25%;
         height: 100%;
+        border: solid 1px #F2F2F2;
+        border-radius: 30px;
+
     }
 
     .container-activite-small-all{
@@ -412,6 +415,10 @@ h6{
         justify-content: space-around;
         border-radius: 5px;
         height: 50%;
+        border: solid 1px #F2F2F2;
+        border-radius: 30px;
+
+
     }
 
     .container-activite-big img{
@@ -498,6 +505,7 @@ h6{
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            width: 100%;
           
     
         }
@@ -515,14 +523,15 @@ h6{
         #container-search{
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             width: 100%;
         }
-        
+    /*form*/
+
         .search:nth-child(3){
             display:initial;
-            width: 10%;
+            width: 15%;
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
 
@@ -530,21 +539,13 @@ h6{
         .search:nth-child(4){
             display:none;
         } 
-    /*form*/
     
         #container-form{
-            justify-content: center;
-            width: 90%;
-        }
-
-        input{
             width: 100%;
         }
+
         .search:nth-child(1){
-            width: 10%;
-        }
-        .search:nth-child(2){
-            flex: 1;
+            width: 50%;
         }
     /*Filtres */
         #container-filtres{
@@ -559,7 +560,7 @@ h6{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            align-content: space-between;
+            align-content: flex-start;
             flex-wrap: wrap;
             height: 120px;
             width: 100%;
@@ -568,16 +569,16 @@ h6{
             order:4;
         }
         .filtres:nth-child(1){
-            width: 35%;
+            width: 40%;
         }
         .filtres:nth-child(2){
             width: 30%;
         }
         .filtres:nth-child(3){
-            width: 35%;
+            width: 40%;
         }
         .filtres:nth-child(4){
-            width: 50%;
+            width: 55%;
         }
      
 
@@ -613,19 +614,21 @@ h6{
         #container-all-hebergement{
             width: 100%;
             background-color: white;
-            height: auto;
-            
+            height: 100%;
         }
         #hebergements{
             display: flex;
-            width: 90%;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 2000px;
+            flex-wrap: nowrap;
 
         }
         .container-hebergement{
-            width: 100%;
+            width: 90%;
             border-radius: 30px;
             box-shadow: 1px 1px 1px grey;
-
         }
         .container-herbergement-title{
             align-self: flex-start;
@@ -635,19 +638,19 @@ h6{
     /*Activité*/
         
         #container-all-activite{
-            align-items: space-around;
-            justify-content: center;
-            align-items: center;
-            
+            width: 100%;
+            height: auto;
+            align-items: flex-start;
+          
         }
 
         #activites{
             max-height: none;
             flex-wrap: nowrap;
             justify-content: space-around;
-            align-items: space-around;
+            align-items: center;
             width: 100%;
-            height: auto;
+            height: 95%;
             
         }
 
@@ -656,18 +659,31 @@ h6{
             height: 25%;
         }
 
-        .container-activite-small-all{
-            justify-content: center;
-            width: 100%;
-            height: 25%;
-        }
         .container-activite-small{
             width: 90%;
-            height: 10%;
+            height: 25%;
+        }
+
+        .container-activite-big img{
+            height: 50%;
+            max-height: 255px;
 
         }
 
-     
+        .container-activite-small-all{
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+        .container-activite-small img{
+            width: 100%;
+            height: 100%;
+            max-height: 255px;
+        }
+        #container-activite-title{
+            margin-left: 5%;
+        }
 
     /*footer*/
  
