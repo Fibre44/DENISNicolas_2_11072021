@@ -20,6 +20,10 @@
     font-family: Raleway-Bold;
 }
 
+h6{
+    font-size: 1em;
+}
+
 
 #container-body{
 
@@ -53,8 +57,13 @@
         width: 33%;
     }
 
+    #container-nav a:hover{
+        border-top : solid blue 1px;
+    }
+
     .logo{
         flex: 1;
+        margin-left: 1%;
     }
 
     .register{
@@ -65,6 +74,10 @@
     #container-head{
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+        margin-left: 1%;
+        height: 45%;
+        min-height: 250px;
 
     }
 /*search */
@@ -88,7 +101,7 @@
 
 /*Form*/
 
-    #containeur-form{
+    #container-form{
         display: flex;
         justify-content: flex-start;
         width: 100%;
@@ -160,6 +173,11 @@
         border-radius: 30px;
     }
 
+    .filtres:hover{
+
+        border : solid #DEEBFF 2px;
+    }
+    
     .filtres:nth-child(1){
         width: 20%;
     }
@@ -196,6 +214,7 @@
         justify-content: center;
         align-items: center;
         margin-left: 10px;
+        font-weight: bold;
 
     }
 
@@ -298,27 +317,29 @@
         background-color: #F2F2F2;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-content: space-around;
+        flex-wrap: no-wrap;
+        justify-content: center;
+        align-content: center;
         width: 65%;
         border-radius: 30px;
         height: 800px;
     }
+
  
     #hebergements{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-around;
-        align-content: space-between;
-        height: 65%;
+        align-content: space-around;
+        height: 80%;
+        width: 100%;
       
     }
     .container-hebergement{
         display: flex;
         flex-direction: column;
-        width: 30%;
+        width: 25%;
         background-color: white;
         border: solid 5px white;
         border-radius: 30px;
@@ -327,6 +348,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        margin-left: 10%;
     }
 
     .herbergement img{
@@ -337,6 +359,8 @@
         border-top-right-radius: 30px;
 
     }
+    
+
 
     /*Activité*/
 
@@ -347,36 +371,41 @@
         flex-direction: column;
         width: 100%;
     }
+    #container-activite-title{
+        margin-left: 1%;
+    }
     #activites{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: space-around;
         align-content: space-around;
-        height: 25%;
         width: 100%;
         max-height: 450px;
     }
     .container-activite-big{
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
         flex-wrap: nowrap;
         width: 25%;
-        height: 425px;
+        height: 100%;
     }
 
     .container-activite-small-all{
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         width: 20%;
-        height: 425px;
-
+        height: 100%;
     }
 
     .container-activite-small{
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         border-radius: 5px;
+        height: 50%;
     }
 
     .container-activite-big img{
@@ -384,7 +413,7 @@
         border-top-left-radius: 30px;
         border-top-right-radius: 30px;
         width:100%;
-        height: 400px;
+        height: 90%;
                 
     } 
     .container-activite-small img{
@@ -392,7 +421,7 @@
         border-top-left-radius: 30px;
         border-top-right-radius: 30px; 
         width: 100%;
-        height: 150px;
+        height: 50%;
     }
 
   
@@ -404,7 +433,6 @@
         background-color: #F2F2F2;
         justify-content:flex-start;
         width: 100%;
-        height: 150px;
    
     }
 
@@ -447,41 +475,33 @@
         width: 425px;
     }
     /*header */
+    
+    #container-header{
+        border-bottom: black solid 1px;
+    }
+
+    #container-nav{
+        flex-direction: column-reverse;
+    }
+
   
-        #container-header{
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            align-content: center;
-            width: 100%;
-            border-bottom : 2px solid #F2F2F2;
-        }
-
-        .logo{
-            flex: none;
-        }
-
-        .register{
-            align-self: flex-start;
-        }
- 
-        #container-nav{
-          align-self: flex-end;
-          justify-content: space-around;
-          align-content: center;
-          flex-wrap: wrap-reverse;
-          width: 350px;
-
-        }
     /*En tete*/
         #container-head{
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            
+          
     
         }
+     /*infos*/
+     #container-title{
+         width: 90%;
+     }
+
+     .information{
+         width: 90%;
+     }
 
     /*Search*/
 
@@ -492,26 +512,41 @@
             align-items: center;
             width: 100%;
         }
-        #container-form{
-            width: 90;
-            justify-content: center;
-
-        }
+        
         .search:nth-child(3){
-            display:initial
+            display:initial;
+            width: 10%;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+
         }
         .search:nth-child(4){
             display:none;
         } 
+    /*form*/
+    
+        #container-form{
+            justify-content: center;
+            width: 90%;
+        }
 
+        input{
+            width: 100%;
+        }
+        .search:nth-child(1){
+            width: 10%;
+        }
+        .search:nth-child(2){
+            flex: 1;
+        }
     /*Filtres */
         #container-filtres{
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: flex-start;
-            flex-wrap: wrap;
-            width: 100%;
+            width: 90%;
+            height: 150px;
         }     
         #container-filtres-icons{
             display: flex;
@@ -529,13 +564,13 @@
             width: 35%;
         }
         .filtres:nth-child(2){
-            width: 35%;
-        }
-        .filtres:nth-child(3){
             width: 30%;
         }
+        .filtres:nth-child(3){
+            width: 35%;
+        }
         .filtres:nth-child(4){
-            width: 45%;
+            width: 50%;
         }
      
 
@@ -571,7 +606,7 @@
         #container-all-hebergement{
             width: 100%;
             background-color: white;
-            height: 100%;
+            height: auto;
             
         }
         #hebergements{
@@ -591,49 +626,49 @@
         }
 
     /*Activité*/
+        
         #container-all-activite{
-            display: flex;
-            align-items: flex-start;
-        }
-        #activites{
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            max-height: none;
-        }
-
-        .container-activite-small-all, .container-activite-small, .container-activite-big{
-            display: flex;
-            flex-direction: column;
+            align-items: space-around;
             justify-content: center;
             align-items: center;
-            width: 90%;
+            
         }
-        .container-activite-small article{
-            border : solid 1px #F2F2F2;
-        }
-  
-        .activite-info{
 
-            align-self: flex-start;
+        #activites{
+            max-height: none;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: space-around;
+            width: 100%;
+            height: auto;
+            
         }
-        .container-activite-big img{
-            height: 100px;
-                    
-        } 
-        .container-activite-small img{
-            height: 150px;
+
+        .container-activite-big{
+            width: 90%;
+            height: 25%;
         }
-    
+
+        .container-activite-small-all{
+            justify-content: center;
+            width: 100%;
+            height: 25%;
+        }
+        .container-activite-small{
+            width: 90%;
+            height: 10%;
+
+        }
+
+     
 
     /*footer*/
  
         footer{
             display: flex;
             justify-content: center;
-                        background-color: #F2F2F2;
-            height: 400px;
+            background-color: #F2F2F2;
+            height: auto;
         }
         #container-nav-footer{
             flex-wrap: nowrap;
