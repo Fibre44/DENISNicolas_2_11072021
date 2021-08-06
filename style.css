@@ -474,10 +474,32 @@ h6{
 }
     /*Tablet*/
 @media all and (max-width : 768px){
+    
     #container-body{
 
         width: 768px;
     }
+
+    #container-main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: no-wrap;
+        height: 2200px;
+        width: 100%;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+
+    #container-all-popular{
+        width: 100%;
+        order : 1;
+    }
+
+    #container-all-herbergement{
+        width: 100%;
+    }
+
 }
 
 
