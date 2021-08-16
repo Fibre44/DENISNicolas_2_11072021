@@ -292,7 +292,6 @@ h6{
 
     }
 
-
     .container-popular-infos{
         display: flex;
         flex-direction: column;
@@ -303,6 +302,7 @@ h6{
         width: 50%;
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
+        margin-left: 5%;
     }
 
     .container-popular img{
