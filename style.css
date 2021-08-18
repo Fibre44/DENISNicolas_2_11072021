@@ -137,6 +137,11 @@ h6{
         width: 3%;
     }
 
+    .search input::placeholder{
+        font-weight: bold;/* A revoir*/
+        font-family: Raleway-bold;
+        color: black;
+    }    
     /*search*/
     .search:nth-child(3){
         display: none;
