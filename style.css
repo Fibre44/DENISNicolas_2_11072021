@@ -206,7 +206,6 @@ h6{
 
     }
 
- 
     .label{
         font-weight: bold;
         border-top-right-radius: 10px;
@@ -522,9 +521,6 @@ h6{
     }
     /*header */
     
-    #container-header{
-        border-bottom: black solid 1px;
-    }
 
     #container-nav{
         flex-direction: column-reverse;
@@ -550,6 +546,13 @@ h6{
             order:2;
             display: inline;
             font-weight: bold;
+        }
+        #container-nav{
+            border-bottom: #F2F2F2 solid 2px;
+        }
+        #container-nav a:hover{
+            border-bottom : solid blue 2px;
+            border-top : none;
         }
      
      /*infos*/
@@ -725,7 +728,7 @@ h6{
         #container-activite-title{
             margin-left: 5%;
         }
-        .container-activite-small, .container-activite-big {
+        .container-activite-small, .container-activite-big{
             margin-bottom: 5%;
         }
 
