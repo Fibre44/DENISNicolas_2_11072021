@@ -29,6 +29,7 @@ h6{
     width: auto;
 
 }
+
 /*icones*/
     /*Star*/
 
@@ -173,7 +174,8 @@ h6{
 
     .filtres:hover{
 
-        border : solid #DEEBFF 2px;
+        transform: scale(1.1);
+
     }
     
     .filtres:nth-child(1){
