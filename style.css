@@ -173,9 +173,7 @@ h6{
     }
 
     .filtres:hover{
-
         transform: scale(1.1);
-
     }
     
     .filtres:nth-child(1){
@@ -490,6 +488,22 @@ h6{
 
         width: 768px;
     }
+    #container-filtres-icons{
+        width: 90%;
+    }
+    
+    .filtres:nth-child(1){
+        width: 30%;
+    }
+    .filtres:nth-child(2){
+        width: 25%;
+    }
+    .filtres:nth-child(3){
+        width: 30%;
+    }
+    .filtres:nth-child(4){
+        width: 40%;
+    }
     #container-main{
         display: flex;
         flex-direction: column;
@@ -510,7 +524,9 @@ h6{
     #container-all-hebergement{
         border-radius: 0px;
         width: 100%;
+        
     }
+  
     #container-all-activite{
         border-radius: 0px;
         width: 100%;
