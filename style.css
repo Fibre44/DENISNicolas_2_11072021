@@ -372,7 +372,7 @@ h6{
         width: 100%;
     }
     #container-activite-title{
-        margin-left: 1%;
+        margin-left: 2%;
     }
     #activites{
         display: flex;
@@ -466,7 +466,7 @@ h6{
         flex-wrap: wrap;
         width: 75%;
         height: 150px;
-        margin-left: 1%;
+        margin-left: 2%;
     }
 
     footer a {
