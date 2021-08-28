@@ -290,6 +290,8 @@ h6{
         border-radius: 30px;
         border : solid 5px white;
         background-color: white;
+        box-shadow: 1px 2px 8px 2px #c4c4c4;    
+
 
     }
 
@@ -352,6 +354,8 @@ h6{
         background-color: white;
         border: solid 1px #F2F2F2;
         border-radius: 30px;
+        box-shadow: 1px 2px 8px 2px #c4c4c4;    
+
     }
     .container-herbergements-infos{
         display: flex;
@@ -410,6 +414,8 @@ h6{
         height: 100%;
         border: solid 1px #F2F2F2;
         border-radius: 30px;
+        box-shadow: 1px 2px 8px 2px #c4c4c4;    
+
 
     }
     .activite-info h6{
@@ -449,6 +455,8 @@ h6{
         justify-content: flex-end;
         height: 45%;
         border-radius: 30px;
+        box-shadow: 1px 2px 8px 2px #c4c4c4;    
+
     }
     .container-activite-small:nth-child(2){
         border: solid #F2F2F2 1px;
