@@ -75,9 +75,7 @@ h6{
     .register{
         font-weight: bold;
     }
-    .register-mobile{
-        display: none;
-    }
+
 /*En tete*/
 
     #container-head{
@@ -594,13 +592,11 @@ h6{
             order:3;
         }
         .register{
-            display: none;
-        }
-        .register-mobile{
             order:2;
             display: inline;
             font-weight: bold;
         }
+ 
         #container-nav{
             border-bottom: #F2F2F2 solid 2px;
         }
