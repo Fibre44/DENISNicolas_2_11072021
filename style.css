@@ -435,10 +435,6 @@ h6{
         height: 100%;
 
     }
-    .container-activite-small-all-2{
-        justify-content: space-around;
-    }
-
     .container-activite-small-all-1 .container-activite-small:nth-child(1){
         height: 60%;
     }
