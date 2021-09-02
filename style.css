@@ -457,13 +457,18 @@ h6{
     }
     .container-activite-small:nth-child(1){
         border: solid #F2F2F2 1px;
+        
     }
     .container-activite-small img{
         object-fit: cover;
         border-top-left-radius: 30px;
         border-top-right-radius: 30px; 
         width: 100%;
-        height: 74%;
+        height: 66%;
+    }
+
+    .container-activite-small-all-1 .container-activite-small:nth-child(1) img{
+        height: 75%;
     }
 
 
