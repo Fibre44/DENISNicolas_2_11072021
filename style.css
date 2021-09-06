@@ -21,7 +21,7 @@ body {
     width: 100%;
   }
 
-.activite-info,h2,h6,strong{
+.activite-info,h2,h6,strong,span{
     font-family: Raleway-Bold;
 }
 
@@ -29,6 +29,10 @@ h6{
     font-size: 1em;
 }
 
+.information span{
+    font-family: Raleway;
+
+}
 
 #container-body{
 
@@ -48,6 +52,10 @@ h6{
     a{
         color:#0065FC;
         text-decoration: none;
+    }
+
+    a:visited{
+        color :black;
     }
 
     #container-header{
@@ -74,6 +82,7 @@ h6{
 
     .register{
         font-weight: bold;
+        margin-right: 1%;
     }
 
 /*En tete*/
@@ -85,6 +94,7 @@ h6{
         margin-left: 1%;
         height: 45%;
         min-height: 250px;
+        margin-bottom: 2%;
 
     }
 /*search */
@@ -142,7 +152,7 @@ h6{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 10%;
+        width: 15%;
         border: none;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
@@ -155,7 +165,7 @@ h6{
     }
 
     .search input::placeholder{
-        font-weight: bold;/* A revoir*/
+        font-weight: bold;
         font-family: Raleway-bold;
         color: black;
     }    
@@ -165,6 +175,9 @@ h6{
     }
     .search:nth-child(4){
         width: 60%;
+        font-weight: bold;
+        font-family: Raleway-bold;
+
     }
 
 
@@ -187,9 +200,11 @@ h6{
     .filtres{
         display: flex;
         flex-direction: row;
-        border : solid #DEEBFF 1px;
+        border : solid #F2F2F2 2px;
         flex-wrap: nowrap;
         border-radius: 30px;
+        max-width: 200px;
+
     }
 
     .filtres:hover{
@@ -197,16 +212,17 @@ h6{
     }
     
     .filtres:nth-child(1){
-        width: 20%;
+        width: 25%;
     }
     .filtres:nth-child(2){
-        width: 15%;
-    }
-    .filtres:nth-child(3){
         width: 20%;
     }
-    .filtres:nth-child(4){
+    .filtres:nth-child(3){
         width: 25%;
+    }
+    .filtres:nth-child(4){
+        width: 40%;
+
     }
   
     .filtres i{
@@ -239,7 +255,7 @@ h6{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        width: 60%;
+        width: 40%;
         flex-wrap: nowrap;
     }
 
@@ -394,7 +410,27 @@ h6{
         margin-top: 0px;
         
     }
-  
+      
+    .container-hebergement:nth-child(1){
+        order : 1;
+    }
+    .container-hebergement:nth-child(2){
+        order : 3;
+    }
+    .container-hebergement:nth-child(3){
+        order : 5;
+
+    }
+    .container-hebergement:nth-child(4){
+        order : 2;
+    }
+    .container-hebergement:nth-child(5){
+        order : 4;
+
+    }
+    .container-hebergement:nth-child(6){
+        order : 6;
+    }
     /*Activité*/
 
     #container-all-activite{
@@ -529,9 +565,9 @@ h6{
         width: 768px;
     }
     #container-filtres-icons{
-        width: 90%;
+        width: 100%;
     }
-    
+      
     .filtres:nth-child(1){
         width: 30%;
     }
@@ -595,6 +631,9 @@ h6{
         flex-direction: column-reverse;
     }
 
+    #container-head{
+        margin-left: 5%;
+    }
   
     /*En tete*/
         #container-header{
@@ -697,16 +736,16 @@ h6{
             order:4;
         }
         .filtres:nth-child(1){
-            width: 40%;
+            width: 50%;
         }
         .filtres:nth-child(2){
-            width: 30%;
-        }
-        .filtres:nth-child(3){
             width: 40%;
         }
+        .filtres:nth-child(3){
+            width: 50%;
+        }
         .filtres:nth-child(4){
-            width: 55%;
+            width: 80%;
         }
      
 
@@ -762,6 +801,27 @@ h6{
         .container-herbergement-title{
             align-self: flex-start;
 
+        }
+
+        .container-hebergement:nth-child(1){
+            order : 1;
+        }
+        .container-hebergement:nth-child(2){
+            order : 2;
+        }
+        .container-hebergement:nth-child(3){
+            order : 3;
+    
+        }
+        .container-hebergement:nth-child(4){
+            order : 4;
+        }
+        .container-hebergement:nth-child(5){
+            order : 5;
+    
+        }
+        .container-hebergement:nth-child(6){
+            order : 6;
         }
 
     /*Activité*/
