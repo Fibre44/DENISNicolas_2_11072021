@@ -585,7 +585,7 @@ h6{
         display: flex;
         flex-direction: column;
         flex-wrap: no-wrap;
-        height: 2500px;
+        height: 2200px;
         width: 100%;
         justify-content: space-around;
         align-content: center;
@@ -616,12 +616,19 @@ h6{
         border-radius: 0px;
         width: 100%;
     }
+    #activites{
+        justify-content: space-between;
+    }
 
  
     .container-activite-big{
-        height: 30%;
+        height: 40%;
         order: 1;
 
+    }
+
+    #container-activite-title{
+        margin-bottom: 5%;
     }
 
     .container-activite-small-all-1{
@@ -630,6 +637,32 @@ h6{
 
     .container-activite-small-all-2{
         order: 3;
+    }
+    .container-activite-small-all-1 .container-activite-small:nth-child(1){
+        height: 40%;
+    }
+
+    .container-activite-small-all-1 .container-activite-small:nth-child(2){
+        height: 40%;
+    }
+    .container-activite-small-all-1 .container-activite-small:nth-child(1) a img{
+        height: 95px;
+    }
+    .container-activite-small-all-1 .container-activite-small:nth-child(2) a img{
+        height: 95px;
+    }
+    .container-activite-small-all-2 .container-activite-small:nth-child(1){
+        height: 40%;
+    }
+
+    .container-activite-small-all-2 .container-activite-small:nth-child(2){
+        height: 40%;
+    }
+    .container-activite-small-all-2 .container-activite-small:nth-child(1) a img{
+        height: 95px;
+    }
+    .container-activite-small-all-2 .container-activite-small:nth-child(2) a img{
+        height: 95px;
     }
   
 
