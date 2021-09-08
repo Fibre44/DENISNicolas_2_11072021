@@ -617,6 +617,22 @@ h6{
         width: 100%;
     }
 
+ 
+    .container-activite-big{
+        height: 30%;
+        order: 1;
+
+    }
+
+    .container-activite-small-all-1{
+        order: 2;
+    }
+
+    .container-activite-small-all-2{
+        order: 3;
+    }
+  
+
 }
     /*Mobile L*/
 
