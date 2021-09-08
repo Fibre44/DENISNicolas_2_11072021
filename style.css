@@ -645,17 +645,17 @@ h6{
     }
 
     .container-activite-big a img{
-        height: 130px;
+        height: 150px;
     }
 
     .container-activite-small-all-1 .container-activite-small:nth-child(2){
         height: 40%;
     }
     .container-activite-small-all-1 .container-activite-small:nth-child(1) a img{
-        height: 130px;
+        height: 150px;
     }
     .container-activite-small-all-1 .container-activite-small:nth-child(2) a img{
-        height: 130px;
+        height: 150px;
     }
     .container-activite-small-all-2 .container-activite-small:nth-child(1){
         height: 40%;
@@ -665,13 +665,15 @@ h6{
         height: 40%;
     }
     .container-activite-small-all-2 .container-activite-small:nth-child(1) a img{
-        height: 130px;
+        height: 150px;
     }
     .container-activite-small-all-2 .container-activite-small:nth-child(2) a img{
-        height: 130px;
+        height: 150px;
     }
   
-
+    footer{
+        align-items: center;
+    }
 }
     /*Mobile L*/
 
