@@ -74,10 +74,12 @@ img:hover{
         flex-direction: row;
         justify-content: space-around;
         width: 25%;
+        height: 100%;
     }
 
-    #container-nav a:hover{
-        border-top : solid blue 1px;
+    #container-nav .lien:nth-child(2):hover{
+        border-top: 3px solid #0065FC;
+        border-top-style: solid;
     }
 
     .logo{
@@ -104,9 +106,10 @@ img:hover{
     }
 
     .lien:nth-child(1){
-        border-top: #0065FC solid;
-        border-width: 1px 2px 15px;
-
+        border-top: 3px solid #0065FC;
+        border-top-width: 3px;
+        border-top-style: solid;
+        border-top-color: rgb(0, 101, 252);
     }
 
     .lien{
