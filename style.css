@@ -569,6 +569,15 @@ img:hover{
     footer a {
         color: black;
     }
+@media all and (max-width : 1440px){
+
+    .container-activite-small-all-1 .container-activite-small:nth-child(1) a img{
+        height: 250px;
+    }
+    .container-activite-small a img{
+        height: 180px;
+    }
+}
 
 
 @media all and (max-width : 1024px){
@@ -576,6 +585,16 @@ img:hover{
     #container-body{
         width: 1024px;
     
+    }
+    .container-activite-small-all-1 .container-activite-small:nth-child(1) a img{
+        height: 230px;
+    }
+    .container-activite-small a img{
+        height: 150px;
+    }
+
+    #activites{
+        max-height: 600px;
     }
 }
     /*Tablet*/
